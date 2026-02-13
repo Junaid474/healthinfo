@@ -4,5 +4,5 @@ import config from '../../../../../keystatic.config';
 export default makePage(config);
 
 export function generateStaticParams() {
-  return [{ params: ['keystatic'] }];
+  return [{ params: [] }];
 }
