@@ -1,0 +1,16 @@
+
+> health-blog@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+✓ Ready in 1090ms
+○ Compiling / ...
+ GET / 200 in 5.6s (compile: 4.8s, render: 754ms)
+ GET /images/posts/hello-world.jpg 404 in 1023ms (compile: 815ms, render: 208ms)
+ GET /posts/hello-world 200 in 3.0s (compile: 2.4s, generate-params: 1762ms, render: 648ms)
+ GET /images/authors/jules.jpg 404 in 89ms (compile: 6ms, render: 83ms)
+ GET /images/posts/hello-world.jpg 404 in 99ms (compile: 15ms, render: 84ms)
