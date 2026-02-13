@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { reader } from '../../utils/reader';
 import { formatDate } from '../../utils/formatDate';
 import AdSensePlaceholder from '../../components/AdSensePlaceholder';
+import { metadata } from './metadata';
+
+export { metadata };
 
 export default async function Home() {
   const posts = await reader.collections.posts.all();

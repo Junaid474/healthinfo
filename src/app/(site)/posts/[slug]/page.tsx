@@ -7,10 +7,14 @@ import MedicalDisclaimer from '../../../../components/MedicalDisclaimer';
 import Schema from '../../../../components/Schema';
 
 export async function generateStaticParams() {
-  const posts = await reader.collections.posts.all();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  try {
+    const posts = await reader.collections.posts.all();
+    return posts.map((post) => ({
+      slug: post.slug,
+    }));
+  } catch (error) {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

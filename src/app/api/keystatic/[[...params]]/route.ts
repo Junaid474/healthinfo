@@ -4,3 +4,9 @@ import config from '../../../../../keystatic.config';
 export const { GET, POST } = makeRouteHandler({
   config,
 });
+
+export const dynamic = 'force-static';
+
+export function generateStaticParams() {
+  return [{ params: ['keystatic'] }];
+}
