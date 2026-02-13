@@ -7,7 +7,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "start:desktop": "concurrently \"npm run dev\" \"electron electron/main.js\"",
+    "start:desktop": "npx concurrently \"npm run dev\" \"electron electron/main.js\"",
     "lint": "eslint"
   },
   "dependencies": {

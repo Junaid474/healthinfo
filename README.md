@@ -14,20 +14,34 @@ A high-performance, SEO-optimized health blog built with Next.js 15, Tailwind CS
 
 ### 1. Installation
 
-1.  Clone this repository to your computer.
-2.  Open a terminal in the project folder.
-3.  Install dependencies:
-    ```bash
-    npm install
-    ```
+1.  **Extract the Files**:
+    *   Unzip the project file.
+    *   You should see a folder containing `package.json`, `src`, `public`, etc.
+    *   Let's say you extracted it to `C:\Users\YourName\Documents\health-blog`.
+
+2.  **Open Terminal**:
+    *   Open `Command Prompt` or `PowerShell`.
+    *   Navigate to that exact folder:
+        ```cmd
+        cd "C:\Users\YourName\Documents\health-blog"
+        ```
+    *   **Verify**: Type `dir` (Windows) or `ls` (Mac/Linux). You **must** see `package.json` in the list. If you see just another folder, `cd` into that one.
+
+3.  **Install Dependencies**:
+    *   Run this command and wait for it to finish:
+        ```bash
+        npm install
+        ```
 
 ### 2. Running the Desktop App
 
 To start the CMS and the Blog in a desktop window:
 
-```bash
-npm run start:desktop
-```
+1.  Make sure you are still in the folder where `package.json` is.
+2.  Run:
+    ```bash
+    npm run start:desktop
+    ```
 
 This will:
 1.  Start the local server.
@@ -41,6 +55,15 @@ This will:
 3.  **Publish**: Go to the **Publish** menu and click **Publish to Live Site**.
     *   This automatically saves your changes and pushes them to GitHub.
     *   GitHub Actions will then build and deploy your site to the live URL.
+
+## Folder Structure
+
+When you unzip the project, ensure you are working in the **root** folder.
+
+*   `package.json`: This is the most important file. Commands like `npm install` must be run in the folder containing this file.
+*   `src/`: Contains all the code for your website.
+*   `public/`: Contains images and static assets.
+*   `electron/`: Contains the code for the desktop app.
 
 ## AdSense Configuration
 
